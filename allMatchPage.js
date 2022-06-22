@@ -4,7 +4,6 @@ const jsdom = require("jsdom");
 const scoreCardObj = require("./scorecard");
 function AllMatchPageExecutor(url) {
     request(url, cb);
-
 }
 function cb(error, response, body) {
     if (error) {
