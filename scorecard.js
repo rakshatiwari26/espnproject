@@ -7,6 +7,7 @@ const path = require("path");
 function scoreCardExecutor(url) {
     request(url, cb);
 }
+
 function cb(error, response, body) {
     if (error) {
         console.log('error:', error.message); // Print the error message
