@@ -5,11 +5,13 @@ const scoreCardObj = require("./scorecard");
 function AllMatchPageExecutor(url) {
     request(url, cb);
 }
+
+
 function cb(error, response, body) {
     if (error) {
         console.log('error:', error.message); // Print the error message
     } else if (response && response.statusCode == 404) {
-        console.log("Page not found");
+        console.log("Page not found log");
     } else {
         console.log("content recieved");
         // console.log(body);
